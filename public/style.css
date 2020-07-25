@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body
+{
+  background-color: #283747;
+  margin: 0;
+  padding:0 ;
+  color: white;
+  width:100%;
+  
+
+}
+.container
+{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+
+ 
+}
+.menu{
+    
+    
+    width:50%;
+    padding:50px;
+    box-shadow: 0 2px 15px #0D0E0E;
+    border-radius: 12px 12px 0 0;
+    background-color:#17202A;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:700;
+
+    
+}
+h1
+{
+  margin-top:30px;
+  margin-bottom:30px;
+  box-shadow: 0 2px 15px #0D0E0E;
+    border-radius: 12px 12px 0 0;
+    background-color:#17202A;
+  width:50%;
+  text-align:center;
+}
+a
+{
+  color:white;
+}
+.lista
+{
+   
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+
+}
+
+button
+{
+    margin-top:25px;
+    background: none;
+    color:white;
+    border: 2px solid #148F77;
+    border-radius: 4px;
+    width:180px;
+    height:50px;
+    font-size: 18px;
+    transition: .6s;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    background-color:#17202A;
+}
+
+
+button:focus
+{
+  outline: none;
+}
+
+button:hover
+{
+  background: #148F77;
+  cursor:pointer;
+}
+button:hover:before
+{
+  transform:translateX(300px) skewX(-15deg);
+  opacity:0.6;
+  transition: .7s;
+}
+button:hover:after
+{
+  transform:translateX(300px) skewX(-15deg);
+  opacity:0.6;
+  transition: .7s;
+}
+table{
+  
+  position: relative;
+  z-index: 2;
+  display:block;
+  width:100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 2px 15px #0D0E0E;
+  border-radius: 12px 12px 0 0;
+  overflow:hidden;
+ 
+ 
+ }
+ td , th{
+  padding: 10px 10px;
+  text-align: center;
+
+ 
+ }
+ th{
+  background-color: #148F77;
+  color: #fafafa;
+  font-family: 'Ubuntu', sans-serif;;
+  font-weight: 700;
+  text-transform: uppercase;
+
+ }
+ tr{
+  width: 100%;
+  background-color: #fafafa;
+  font-family: 'Ubuntu', sans-serif;
+  height:78px;
+ }
+ tr:nth-child(even){
+  background-color: #17202A;
+ }
+ tr:nth-child(odd){
+  background-color: #17202A/*#1B2631*/;
+ }
+ .table-sortable th {
+  cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+  margin-left: 5px;
+}
+
+.cím
+{
+  margin-top:20px;
+  display:flex;
+    align-items:center;
+    justify-content: center;
+  
+  box-shadow: 0 2px 15px #0D0E0E;
+  border-radius: 12px 12px 0 0;
+  background-color:#17202A;
+  margin-bottom:20px;
+  
+
+}
+
+@media
+only screen and (max-width: 1200px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+ 
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr{
+    height:auto;
+    
+  }
+  td {
+    border: none;
+    position: relative;
+    padding-left: 200px;
+    padding-bottom:20px;
+    margin-left: 150px;
+  }
+  td:before {
+    position: absolute;
+    top: 12px;
+    left: 6px;
+    width: 200px;
+    padding-right: 40px;
+
+    white-space: nowrap;
+    margin-left: -150px;
+  }
+ 
+  td:nth-of-type(1):before { content: "Gyümölcs típus"; }
+  td:nth-of-type(2):before { content: "Terület"; }
+  td:nth-of-type(3):before { content: "Fajta"; }
+  td:nth-of-type(4):before { content: "Szedés módja";}
+  td:nth-of-type(5):before { content: "Traktoros vezetékneve";}
+  td:nth-of-type(6):before { content: "Traktoros keresztneve";}
+  td:nth-of-type(7):before { content: "Traktoros rendszáma";}
+  td:nth-of-type(8):before { content: "Dátum";}
+  td:nth-of-type(9):before { content: "Rázó";}
+  td:nth-of-type(10):before { content: "Súly";}
+  td:nth-of-type(11):before { content: "Helyszín";}
+  td:nth-of-type(12):before { content: "";}
+  
+  
+  .tabla3 td:nth-of-type(1):before { content: "Gyümölcs";}
+  .tabla3 td:nth-of-type(2):before { content: "Terület";}
+  .tabla3 td:nth-of-type(3):before { content: "Fajta";}
+  .tabla3 td:nth-of-type(4):before { content: "Szedés módja";}
+  .tabla3 td:nth-of-type(5):before { content: "Rekesz fajta";}
+  .tabla3 td:nth-of-type(6):before { content: "DB";}
+  .tabla3 td:nth-of-type(7):before { content: "Súly";}
+  .tabla3 td:nth-of-type(8):before { content: "Helyszín";}
+  .tabla3 td:nth-of-type(9):before { content: "Utolsó szállítás dátuma";}
+
+  .tabla4 td:nth-of-type(1):before { content: "Csoport";}
+  .tabla4 td:nth-of-type(2):before { content: "Gyümölcs";}
+  .tabla4 td:nth-of-type(3):before { content: "Terület";}
+  .tabla4 td:nth-of-type(4):before { content: "Fajta";}
+  .tabla4 td:nth-of-type(5):before { content: "Szedés módja";}
+  .tabla4 td:nth-of-type(6):before { content: "Rekesz fajta";}
+  .tabla4 td:nth-of-type(7):before { content: "DB";}
+  .tabla4 td:nth-of-type(8):before { content: "Súly";}
+  .tabla4 td:nth-of-type(9):before { content: "Helyszín";}
+  .tabla4 td:nth-of-type(10):before { content: "Utolsó szállítás dátuma";}
+  
+  
+  .tabla2 td:nth-of-type(1):before { content: "Rekesz fajta";}
+  .tabla2 td:nth-of-type(2):before { content: "Raklap típus";}
+  .tabla2 td:nth-of-type(3):before { content: "Súly";}
+  .tabla2 td:nth-of-type(4):before { content: "Csoport";}
+  .tabla2 td:nth-of-type(5):before { content: "Rekesz DB";}
+  .tabla2 td:nth-of-type(6):before { content: "Megjegyzes";}
+
+}
+
+
+@media print {
+  #openSzuresBtn{
+    display:none;
+  }
+  .menu{
+    display:none;
+  }
+  #osszesitoBtn{
+    display:none;
+  }
+  thead {
+    display: table-header-group;
+  }
+  
+  .tabla4 tr td, .tabla4 tr th {
+    padding: 15px 20px;
+  }
+  .tabla3 tr td, .tabla3 tr th {
+    padding: 15px 25px;
+  }
+
+  .tabla0 th:last-child{ display:none;} 
+  table th:nth-child(1){ display:none;} 
+}
